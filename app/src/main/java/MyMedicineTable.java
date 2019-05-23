@@ -89,6 +89,8 @@ public class MyMedicineTable extends SQLiteOpenHelper {
             medicine.setDamege(coursor.getString(4));
             medicineList.add(medicine);
             flag=coursor.moveToNext();
+            //555
+
         }
         return medicineList;
     }
