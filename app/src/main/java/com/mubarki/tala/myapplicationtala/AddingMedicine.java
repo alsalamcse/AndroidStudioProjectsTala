@@ -15,9 +15,6 @@ public class AddingMedicine extends AppCompatActivity {
     private EditText etPercent;
     private EditText etDamege;
     private Button btnSave;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,5 +37,4 @@ public class AddingMedicine extends AppCompatActivity {
             finish();
         }
     }
-
 }

@@ -72,7 +72,7 @@ public class MyPatientsTable extends SQLiteOpenHelper { //
         db.close();
         return num;
     }
-    public ArrayList<MyClinic>getAllPatient()
+    public ArrayList<MyClinic> getAllMedicine()
     {
         ArrayList<MyClinic> patientsList=new ArrayList<MyClinic>();
         String selectQuery="SELECT*FROM "+TABLE_PATIENTS;

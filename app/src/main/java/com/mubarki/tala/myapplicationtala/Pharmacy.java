@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
 public class Pharmacy extends AppCompatActivity {
     private Button btnAddMedicine;
     private ListView lstdynamic1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,5 +26,13 @@ public class Pharmacy extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+        initListview();
     }
-}
+    private void initListview(){
+        lstdynamic1 = (ListView) findViewById(R.id.lstdynamic);
+        String[] a={"one","two","three"};
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_2,a );
+        lstdynamic1.setAdapter(adapter);
+    }
+    }
+
