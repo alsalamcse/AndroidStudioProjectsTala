@@ -10,6 +10,10 @@
         android:id="@+id/btnAddMedicine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/lstdynamic1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="19dp"
         android:text="+ADD New Medicine+"
         tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="6dp" />
@@ -21,7 +25,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="15dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="62dp" />
 </RelativeLayout>

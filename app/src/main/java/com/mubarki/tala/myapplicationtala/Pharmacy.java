@@ -30,9 +30,9 @@ public class Pharmacy extends AppCompatActivity {
     }
     private void initListview(){
         lstdynamic1 = (ListView) findViewById(R.id.lstdynamic);
+        /////////MyMeddicineTable table=new MyMeddicineTable(this);
         String[] a={"one","two","three"};
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_2,a );
-        lstdynamic1.setAdapter(adapter);
+        /////////  ArrayAdapter<MyPharmacy> adapter=new ArrayAdapter<MyPharmacy>(this, android.R.layout.simple_expandable_list_item_2,table.getAllMedicine() );
+        /////////  lstdynamic1.setAdapter(adapter);
     }
     }
-
