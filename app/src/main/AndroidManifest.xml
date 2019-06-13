@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DoctorName">
+        <activity android:name=".UnlockPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DoctorPatients" />
-        <activity android:name=".Pharmacy" />
+        <activity android:name=".PatientsList" />
+        <activity android:name=".PharmacyList" />
         <activity android:name=".AddingPatients" />
         <activity android:name=".AddingMedicine"></activity>
     </application>

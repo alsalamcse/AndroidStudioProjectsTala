@@ -31,8 +31,18 @@ public class AddingMedicine extends AppCompatActivity {
 
     public void onClick(View v) {
         if (v == btnSave) {
+            String n=etName.getText().toString();
+            String d=etDamege.getText().toString();
+            String p=etPercent.getText().toString();
+            String r=etResone.getText().toString();
 
-            Intent intent = new Intent(AddingMedicine.this, Pharmacy.class);
+            MyPharmacy myClinic=new MyPharmacy();
+            myClinic.setNameMedecine(n);
+            myClinic.setDamege(d);
+            double p1=Double.parseDouble(p);
+            myClinic.setPercent(p1);
+            myClinic.setResone(r);
+            Intent intent = new Intent(AddingMedicine.this, PharmacyList.class);
             startActivity(intent);
             finish();
         }

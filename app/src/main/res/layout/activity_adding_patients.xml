@@ -27,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="302dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="308dp"
         android:ems="10"
         android:hint="The Therapy Sort:"
         android:inputType="textPersonName"
@@ -36,7 +36,7 @@
         tools:layout_editor_absoluteY="322dp" />
 
     <EditText
-        android:id="@+id/etIllness"
+        android:id="@+id/etIllnes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -65,16 +65,17 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="218dp"
-        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="75dp"
-        android:layout_marginBottom="426dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="389dp"
         android:text="Adding Patients Data "
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@android:dimen/app_icon_size"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="71dp"
         tools:layout_editor_absoluteY="25dp" />
@@ -98,5 +99,17 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="117dp"
         android:layout_marginBottom="18dp"
-        android:text="Saving" />
+        android:text="Saving"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="157dp"
+        android:layout_height="233dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/tttttttttttttttttttttttttt" />
+
 </RelativeLayout>

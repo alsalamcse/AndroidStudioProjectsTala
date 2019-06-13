@@ -1,10 +1,12 @@
+package com.mubarki.tala.myapplicationtala;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.mubarki.tala.myapplicationtala.AddingPatients;
+import com.mubarki.tala.myapplicationtala.MyClinic;
 
 import java.util.ArrayList;
 

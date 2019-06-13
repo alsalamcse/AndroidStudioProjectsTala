@@ -1,3 +1,5 @@
+package com.mubarki.tala.myapplicationtala;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

@@ -14,6 +14,7 @@ public class AddingPatients extends AppCompatActivity {
     private EditText etId;
     private EditText etTherapy;
     private EditText etAllergy;
+    private EditText etIllnes;
     private Button btnSave;
 
 
@@ -27,12 +28,27 @@ public class AddingPatients extends AppCompatActivity {
         etId = (EditText) findViewById(R.id.etId);
         etTherapy = (EditText) findViewById(R.id.etTherapy);
         etAllergy = (EditText) findViewById(R.id.etAllergy);
+        etIllnes = (EditText) findViewById(R.id.etIllnes);
+
     }
 
     public void onClick(View v) {
         if (v == btnSave) {
+            String n=etName.getText().toString();
+            String a=etAllergy.getText().toString();
+            String  l=etId.getText().toString();
+            String t=etTherapy.getText().toString();
+            String il=etIllnes.getText().toString();
 
-            Intent intent = new Intent(AddingPatients.this, DoctorPatients.class);
+            MyClinic myClinic=new MyClinic();
+            myClinic.setName(n);
+            myClinic.setAllergy(a);
+            myClinic.setIllness(il);
+            Long l1=Long.parseLong(l);
+            myClinic.set_id(l1);
+            myClinic.setTherapysort(t);
+
+            Intent intent = new Intent(AddingPatients.this, PatientsList.class);
             startActivity(intent);
             finish();
         }

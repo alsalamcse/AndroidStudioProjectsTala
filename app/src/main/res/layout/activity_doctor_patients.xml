@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorPatients">
+    tools:context=".PatientsList">
 
     <Button
         android:id="@+id/btnAddPatients"
-        android:layout_width="wrap_content"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/lstdynamic"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/colorPrimaryDark"
         android:text="+Add New Patients +"
         tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="6dp" />

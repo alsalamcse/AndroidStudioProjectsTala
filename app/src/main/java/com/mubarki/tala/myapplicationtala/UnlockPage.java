@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class DoctorName extends AppCompatActivity {
+public class UnlockPage extends AppCompatActivity {
     private Button btnPatients;
     private Button btnPharmacy;
 
@@ -21,7 +21,7 @@ public class DoctorName extends AppCompatActivity {
     public void onClick(View v) {
         if (v == btnPatients) {
 
-            Intent intent = new Intent(DoctorName.this, DoctorPatients.class);
+            Intent intent = new Intent(UnlockPage.this, PatientsList.class);
             startActivity(intent);
             finish();
         }
@@ -32,7 +32,7 @@ public class DoctorName extends AppCompatActivity {
     {
         if (v == btnPharmacy) {
 
-            Intent intent = new Intent(DoctorName.this, Pharmacy.class);
+            Intent intent = new Intent(UnlockPage.this, PharmacyList.class);
             startActivity(intent);
             finish();
         }

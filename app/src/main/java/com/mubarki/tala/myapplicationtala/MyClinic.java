@@ -1,3 +1,5 @@
+package com.mubarki.tala.myapplicationtala;
+
 public class MyClinic {
 ////////////////
     private String name;

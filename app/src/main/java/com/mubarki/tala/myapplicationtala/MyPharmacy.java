@@ -1,3 +1,5 @@
+package com.mubarki.tala.myapplicationtala;
+
 public class MyPharmacy {
     private String nameMedecine,resone,Damege;
     private double Percent;
@@ -55,6 +57,7 @@ public class MyPharmacy {
     public String toString() {
         return "The Name Of It:"+this.nameMedecine+"Why Did You Gave It To Your Patient "+this.resone+"Is There Any Damege on the Patients Helth?"+this.Percent+"How Many Percent People take it:"+ this.Damege+"His ID Is:"+this._id1;
     }
+
 
 
 }
