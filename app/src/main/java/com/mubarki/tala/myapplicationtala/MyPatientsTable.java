@@ -1,14 +1,14 @@
 package com.mubarki.tala.myapplicationtala;
 
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+        import android.content.ContentValues;
+        import android.content.Context;
+        import android.database.Cursor;
+        import android.database.sqlite.SQLiteDatabase;
+        import android.database.sqlite.SQLiteOpenHelper;
 
-import com.mubarki.tala.myapplicationtala.MyClinic;
+        import com.mubarki.tala.myapplicationtala.MyClinic;
 
-import java.util.ArrayList;
+        import java.util.ArrayList;
 
 public class MyPatientsTable extends SQLiteOpenHelper { //
 
@@ -90,7 +90,7 @@ public class MyPatientsTable extends SQLiteOpenHelper { //
             patient.setTherapysort(coursor.getString(4));
             patientsList.add(patient);
             flag=coursor.moveToNext();
-            }
-            return patientsList;
+        }
+        return patientsList;
     }
 }

@@ -80,13 +80,13 @@
         tools:layout_editor_absoluteY="286dp" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnSave2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/etName"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="34dp"
         android:text="Save Data"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"

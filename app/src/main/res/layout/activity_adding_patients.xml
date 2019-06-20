@@ -92,7 +92,7 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btnSave1"
         android:layout_width="121dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

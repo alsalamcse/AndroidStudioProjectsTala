@@ -20,11 +20,11 @@ public class PatientsList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_patients);
         btnAddPatients = (Button) findViewById(R.id.btnAddPatients);
-       initListview();
+       initListview1();
     }
 
-    public void onClick(View v) {
-        if (v == btnAddPatients) {
+    public void onClick(View v2) {
+        if (v2 == btnAddPatients) {
 
             Intent intent = new Intent(PatientsList.this, AddingPatients.class);
             startActivity(intent);
@@ -37,13 +37,7 @@ public class PatientsList extends AppCompatActivity {
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,a);
         lstdynamic.setAdapter(adapter);
     }
-
-
-
-
-
-
-    private void initListview(){
+    private void initListview1(){
         lstdynamic = (ListView) findViewById(R.id.lstdynamic);
 
         MyPatientsTable m1=new MyPatientsTable(this);
@@ -60,7 +54,10 @@ public class PatientsList extends AppCompatActivity {
                 Toast.makeText(PatientsList.this, "position:" + position, Toast.LENGTH_SHORT).show();
                 MyClinic m1=(MyClinic) parent.getItemAtPosition(position);
                 Toast.makeText(PatientsList.this,"Name:"+m1.getName(),Toast.LENGTH_SHORT).show();
-                Intent i1=new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+m1.getName()));
+                Toast.makeText(PatientsList.this,"Name:"+m1.getAllergy(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(PatientsList.this,"Name:"+m1.getIllness(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(PatientsList.this,"Name:"+m1.getTherapysort(),Toast.LENGTH_SHORT).show();
+                Intent i1=new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+m1.getName()+m1.getAllergy()));
                 startActivity(i1);
                 finish();
                 return true;

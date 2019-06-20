@@ -22,20 +22,28 @@ public class PharmacyList extends AppCompatActivity {
         lstdynamic1 = (ListView) findViewById(R.id.lstdynamic1);
     }
 
-    public void onClick(View v) {
-        if (v == btnAddMedicine) {
+    public void onClick(View v1)
+    {
+        if (v1 == btnAddMedicine)
+        {
 
-            Intent intent = new Intent(PharmacyList.this, AddingPatients.class);
+            Intent intent = new Intent(PharmacyList.this, AddingMedicine.class);
             startActivity(intent);
             finish();
         }
         initListview();
     }
+    private void initListViewArraySample(){
+        lstdynamic1=(ListView) findViewById(R.id.lstdynamic1);
+        String[] a={"one","two","three"};
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,a);
+        lstdynamic1.setAdapter(adapter);
+    }
     private void initListview(){
-        lstdynamic1 = (ListView) findViewById(R.id.lstdynamic);
+        lstdynamic1 = (ListView) findViewById(R.id.lstdynamic1);
         MyMedicineTable m=new MyMedicineTable(this);
-        //String[] a={"one","two","three"};
-          ArrayAdapter<MyPharmacy> adapter=new ArrayAdapter<MyPharmacy>(this, android.R.layout.simple_expandable_list_item_2,m.getAllPatient());
+
+          ArrayAdapter<MyPharmacy> adapter=new ArrayAdapter<MyPharmacy>(this, android.R.layout.simple_expandable_list_item_1,m.getAllPatient());
         lstdynamic1.setAdapter(adapter);
         lstdynamic1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override

@@ -14,13 +14,13 @@ public class AddingMedicine extends AppCompatActivity {
     private EditText etResone;
     private EditText etPercent;
     private EditText etDamege;
-    private Button btnSave;
+    private Button btnSave2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adding_medicine);
 
-        btnSave = (Button) findViewById(R.id.btnSave);
+        btnSave2 = (Button) findViewById(R.id.btnSave2);
         tv = (TextView) findViewById(R.id.tv);
         etName = (EditText) findViewById(R.id.etName);
         etResone = (EditText) findViewById(R.id.etReasone);
@@ -29,12 +29,14 @@ public class AddingMedicine extends AppCompatActivity {
 
     }
 
-    public void onClick(View v) {
-        if (v == btnSave) {
+    public void onClick(View v4) {
+        if (v4 == btnSave2) {
             String n=etName.getText().toString();
             String d=etDamege.getText().toString();
             String p=etPercent.getText().toString();
             String r=etResone.getText().toString();
+
+
 
             MyPharmacy myClinic=new MyPharmacy();
             myClinic.setNameMedecine(n);

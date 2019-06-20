@@ -15,14 +15,14 @@ public class AddingPatients extends AppCompatActivity {
     private EditText etTherapy;
     private EditText etAllergy;
     private EditText etIllnes;
-    private Button btnSave;
+    private Button btnSave1;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adding_patients);
-        btnSave = (Button) findViewById(R.id.btnSave);
+        btnSave1 = (Button) findViewById(R.id.btnSave1);
         tv = (TextView) findViewById(R.id.tv);
         etName = (EditText) findViewById(R.id.etName);
         etId = (EditText) findViewById(R.id.etId);
@@ -32,8 +32,8 @@ public class AddingPatients extends AppCompatActivity {
 
     }
 
-    public void onClick(View v) {
-        if (v == btnSave) {
+    public void onClick(View v3) {
+        if (v3 == btnSave1) {
             String n=etName.getText().toString();
             String a=etAllergy.getText().toString();
             String  l=etId.getText().toString();
